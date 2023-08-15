@@ -1,0 +1,23 @@
+
+<style>
+h1 {
+	color: "rgb(40,40,40)";
+	text-align: center;
+	font-family: "Helvetica Neue"
+}
+
+h2 {
+	color: "rgb(20,20,20)";
+	text-align: left;
+	font-family: "Helvetica Neue";
+}
+
+a {
+    color: #0366A5;
+    font-family: "Helvetica Neue";
+}
+</style>
+<h1><a href="http://localhost:8080/view/FrontPage">GoWiki</a><h1>
+<h2>{{.Title}}</h2>
+<div>{{printf "%s" .Body}}</div>
+<p>(<a href="/edit/{{.Title}}">edit this page</a>)</p>
